@@ -15,17 +15,39 @@ Module.register("compliments",{
 			morning: [
 				"Good morning, handsome!",
 				"Enjoy your day!",
-				"How was your sleep?"
+				"How was your sleep?",
+				"Another day, another hustle.",
+				"Start your morning right, have your day be great",
+				"You are enough.",
+				"Your smile is contagious.",
+				"You're more helpful than you realize",
+				"What may be small for you, may be huge for someone else.",
+				"Everybody has tough times, only people like you get out of them."
 			],
 			afternoon: [
 				"Hello, beauty!",
 				"You look sexy!",
-				"Looking good today!"
+				"Looking good today!",
+				"Tough times come and go, you will become greater.",
+				"When you make up your mind, you will succeed.",
+				"You bring inspiration to many.",
+				"You are making a difference.",
+				"You bring out the best in people.",
+				"I bet you sweat glitter.",
+				"You were cooler before hipsters."
 			],
 			evening: [
 				"Wow, you look hot!",
 				"You look nice!",
-				"Hi, sexy!"
+				"Hi, sexy!",
+				"You're a candle in the darkness.",
+				"You could survive the purge.",
+				"Any team would be lucky to have you on it.",
+				"Babies and small animals probably love you.",
+				"There is ordinary and then there is you.",
+				"You're better than a unicorn, because you're real.",
+				"You're truly special.",
+				"You're a gift to those around you."
 			]
 		},
 		updateInterval: 30000,

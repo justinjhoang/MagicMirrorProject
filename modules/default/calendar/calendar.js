@@ -17,17 +17,18 @@ Module.register("calendar",{
 		defaultSymbol: "calendar", // Fontawesome Symbol see http://fontawesome.io/cheatsheet/
 		displayRepeatingCountTitle: false,
 		defaultRepeatingCountTitle: '',
-		maxTitleLength: 25,
+		maxTitleLength: 30,
 		fetchInterval: 5 * 60 * 1000, // Update every 5 minutes.
 		animationSpeed: 2000,
 		fade: true,
 		urgency: 7,
-		timeFormat: "relative",
-		fadePoint: 0.25, // Start on 1/4th of the list.
+		timeFormat: "absolute",
+		fadePoint: 0.5, // Start on 1/4th of the list.
 		calendars: [
 			{
 				symbol: "calendar",
-				url: "http://www.calendarlabs.com/templates/ical/US-Holidays.ics",
+				//url: "http://www.calendarlabs.com/templates/ical/US-Holidays.ics",
+				url: "https://calendar.google.com/calendar/ical/hoang.justin@gmail.com/public/basic.ics",
 			},
 		],
 		titleReplace: {

@@ -1,0 +1,75 @@
+/* Magic Mirror Config Sample
+ *
+ * By Michael Teeuw http://michaelteeuw.nl
+ * MIT Licensed.
+ */
+
+var config = {
+	port: 8080,
+
+	language: 'en',
+	timeFormat: 12,
+	units: 'imperial',
+
+	modules: [
+		{
+			module: 'alert',
+		},
+		{
+			module: 'clock',
+			position: 'top_left'
+		},
+		{
+			module: 'calendar',
+			header: 'US Holidays',
+			position: 'top_left',
+			config: {
+				calendars: [
+					{
+						symbol: 'calendar-check-o ',
+						//url: 'webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics'
+						url: 'webcal://https://calendar.google.com/calendar/ical/hoang.justin%40gmail.com/public/basic.ics'
+					}
+				]
+			}
+		},
+		{
+			module: 'compliments',
+			position: 'lower_third'
+		},
+		{
+			/*module: 'wuforecast',
+      			position: 'top_right',  // This can be any of the regions.
+                                    		// Best results in left or right regions.
+        		config: {
+            		// See 'Configuration options' for more information.
+            		location: 'France/Paris',
+            		appid: 'b4eeeb1513bf82e73510925b64c64683' //wunderground.com API key.
+			*/}
+		},
+		{
+			module: 'newsfeed',
+			position: 'bottom_bar',
+			config: {
+				feeds: [
+					{
+						//title: "New York Times",
+						//url: "http://www.nytimes.com/services/xml/rss/nyt/HomePage.xml"
+						//title: "CNN Top Stories",
+						//url: "http://rss.cnn.com/rss/cnn_topstories.rss"
+						//title: "CNN Latest",
+						//url: "http://rss.cnn.com/rss/cnn_latest.rss"
+						title: "LA Times",
+						url: "http://latimes.com/rss2.0.xml"
+					}
+				],
+				showSourceTitle: true,
+				showPublishDate: true
+			}
+		},
+	]
+
+};
+
+/*************** DO NOT EDIT THE LINE BELOW ***************/
+if (typeof module !== 'undefined') {module.exports = config;}
